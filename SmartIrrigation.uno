@@ -13,7 +13,7 @@ void setup(){
     pinMode(relayPin, OUTPUT);
   
     lcd.begin(16, 3);
-  
+
     lcd.setCursor(1, 1);
     lcd.print("JatheeCricuits");
     delay(1000);
@@ -115,6 +115,7 @@ void poweronRelay()
     lcd.clear();
   }
 
+//poweroffRelay
 void poweroffRelay()
   {
     digitalWrite(relayPin, LOW);
